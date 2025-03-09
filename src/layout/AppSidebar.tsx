@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useSidebar } from "@/context/SidebarContext";
-import { LayoutGrid, Users } from "lucide-react";
+import { LayoutGrid, Users, BriefcaseBusiness, UserPen } from "lucide-react";
 
 type NavItem = {
   name: string;
@@ -23,6 +23,16 @@ const navItems: NavItem[] = [
     name: "Employee",
     icon: <Users size={18} />,
     path: "/employee",
+  },
+  {
+    name: "Portfolio",
+    icon: <BriefcaseBusiness size={18} />,
+    path: "/portfolio",
+  },
+  {
+    name: "User Mgr",
+    icon: <UserPen size={18} />,
+    path: "/user",
   },
 ];
 
